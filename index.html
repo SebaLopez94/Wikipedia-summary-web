@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		
+		<title> 
+		Task by Sebastian Lopez Garcia
+		</title>
+	</head>
+	<body onload="language();">
+		<div id="side-menu" class="side-menu open">
+			<div class="icon" onclick="hamburger()">
+				<img class="hamburgerIcon" src="images/hamburger.png">
+			</div>
+			<div class="text"></div>
+			<div class="content">
+				<form>
+					Search:
+					<input type="text" name="serch" id="searchID">
+					Lenguage:
+					<select type="text" name="language" id="languagesID">
+					</select>
+					<input id="mainButton" type="button" onclick="apiCall();" value="Search">
+				</form>
+				<img id="image" src="images/wikipedia.png">
+			</div>
+		</div>
+		<div id="contain" class="containerMax">
+			<h1 id="title"> WELCOME TO MY TASK (SEBASTIÁN LÓPEZ GARCÍA)</h1>
+			<p id="info"></p>
+		</div>
+	</body>
+	<script src="./js/index.js"></script>
+</html>

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+} 
+  
+body {
+  font-size: 18px;
+}
+
+.hamburgerIcon{
+  margin-top: -0.5em;
+  width: 2em; 
+  height: 2em;
+} 
+
+.side-menu {
+  z-index: 1;
+  width: 3em;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 1px 0 12px grey;
+  transition: width 0.2s ease-out;
+  background: #FCEFEF;
+}
+
+.side-menu.open {
+  width: 15em;
+}
+
+.side-menu .icon {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  padding-top: 1em;
+  padding-bottom: 1em; 
+  background: #D68C8C;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: inset 0 -1px #6D0A1A;
+  transition: all 0.2s ease-out;
+}
+
+.side-menu .text {
+  transform: rotate(90deg);
+}
+
+.side-menu:not(.open) .text:before {
+  content: 'Menu'; 
+  margin-left: 30px;
+}
+
+.side-menu .content {
+  display: none;
+  padding: 15px;
+}
+
+.side-menu.open .content {
+  display: inherit;
+}
+
+.side-menu .content input, .side-menu .content select {
+  width: 100%;
+  padding: 0.8ex;
+  margin-bottom: 15px;
+  font-size: 16px; 
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+}   
+
+#mainButton{
+  cursor: pointer;
+}
+
+.containerMax { 
+  height: 100vw; 
+  position: absolute;
+  left: 16em; 
+  width: 80% ; 
+} 
+     
+.containerMin { 
+  height: 100vw; 
+  position: absolute;
+  left: 4em;
+  width: 80%; 
+} 
+  
+      
+#title{
+  color: #D36D6D;
+ width:relative;
+ text-align: center;
+ margin-top: 2em;
+}
+
+#info {
+  margin: 1em 2em;
+  text-align: justify-all;
+} 
+
+#image{
+max-width:13em;
+max-height:auto;
+}
+
+
+
+ 
